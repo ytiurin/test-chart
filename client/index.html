@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Koyfin test task </title>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.min.js"></script>
+<script>
+  var socket = io();
+  socket.on('market events', function (data) {
+    console.log(data);
+  });
+</script>
+</body>
+</html>
