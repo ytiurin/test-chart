@@ -4,7 +4,9 @@
 
 ## Description
 
-Your task implements a dashboard with a stock graph. You will have realtime updates through WebSockets. Also, you can get a market history by making a request to `/market-history`.
+Your task is to implement a dashboard with a stock graph. You will have real-time updates through WebSockets. Also, you can get a market history by making a request to `/market-history`.
+
+Graph should load history data and show live updates.
 
 There are two graph's types:
 
@@ -24,6 +26,8 @@ Please, use this tools in the task:
 - [d3.js](https://d3js.org)
 - [React](https://facebook.github.io/react/)
 
-Please, write your code in `client` folder. The bundle should be built in `public` folder. For this change script `build-client` in `package.json` file. 
+You are free to add more tools if needed.
+
+Please, write your code in `client` folder. The bundle should be built in `public` folder. For this change script `build-client` in `package.json` file.
 
 It will be plus, if you implement `npm test` command. This command should check eslint rules for your code and then run tests.
