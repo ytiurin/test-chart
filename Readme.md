@@ -4,19 +4,19 @@
 
 ## Description
 
-Your task is to implement a dashboard with a stock graph. You will have real-time updates through WebSockets. Also, you can get a market history by making a request to `/market-history`.
+Your task is to implement a dashboard with a stock chart. You will have real-time updates through WebSockets. Also, you can get a market history by making a request to `/market-history`.
 
-Graph should load history data and show live updates.
+Chart should load history data and show live updates.
 
-There are two graph's types:
+There are two ''s types:
 
-- intraday price graph. It shows a price in every moment. `F(t) = P(t)`
-- intraday percent change graph. It shows a percent change from the start of the day. `F(t) = (P(t) - P(0))/P(0) * 100%`
+- intraday price chart. It shows a price in every moment. `F(t) = P(t)`
+- intraday percent change chart. It shows a percent change from the start of the day. `F(t) = (P(t) - P(0))/P(0) * 100%`
 
 Assumptions:
-- The user can change the type of the graph.
-- The graph should change in real-time.
-- The graph uses data only for the current day.
+- The user can change the type of the chart.
+- The chart should change in real-time.
+- The chart uses data only for the current day.
 
 ## Tech info
 
