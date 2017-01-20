@@ -8,7 +8,7 @@ Your task is to implement a dashboard with a stock chart. You will have real-tim
 
 Chart should load history data and show live updates.
 
-There are two ''s types:
+There are two chart's types:
 
 - intraday price chart. It shows a price in every moment. `F(t) = P(t)`
 - intraday percent change chart. It shows a percent change from the start of the day. `F(t) = (P(t) - P(0))/P(0) * 100%`
