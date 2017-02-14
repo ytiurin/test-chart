@@ -1,5 +1,5 @@
 const startValues = {
-  APPL: [119.2500],
+  AAPL: [119.2500],
   GOOGL: [829.5300],
   FB: [126.6200],
   MSFT: [62.6100]
@@ -12,7 +12,7 @@ class Market {
 
   startNewDay () {
     Object.keys(this.history).forEach((ticker) => {
-      this.history[ticker] = [this.getLastPrice[ticker]]
+      this.history[ticker] = [this.getLastPrice(ticker)]
     })
   }
 
