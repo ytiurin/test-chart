@@ -7,18 +7,28 @@
     "url": "http://eze.tech/"
   },
   "scripts": {
-    "build-client": "cp -a client/. public/",
+    "build-client": "cp -a client/index.html public/index.html && webpack --config webpack.config.js",
     "prestart": "npm run build-client",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "test": "eslint client/*.js"
   },
   "dependencies": {
+    "d3": "^4.5.0",
     "express": "4.14.0",
-    "socket.io": "1.7.2"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "socket.io": "1.7.2",
+    "socket.io-client": "^1.7.3"
   },
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-react-jsx": "^6.23.0",
+    "babel-preset-env": "^1.1.8",
     "eslint": "^3.13.1",
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-standard": "^2.0.1"
   },
   "private": true
